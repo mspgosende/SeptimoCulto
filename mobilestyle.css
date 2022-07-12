@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*header*/
+
+/*navbar*/
+
+/*main news*/
+
+/*indexcards*/
+@media (max-width: 1080px) {
+.boxofindexcards{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+.card{
+    margin: 25px;
+    }
+}
+/*creatorcards*/
+@media (max-width: 1080px) {
+    .boxofcreatorscards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .creatorcard{
+         height: 450px;
+         width: 350px;
+        }
+    }
+
+/*filmscards*/
+@media (max-width: 1080px) {
+   .boxoffilmscards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .filmscard{
+        margin: 25px;
+    }
+}
+    
+/*musiccards*/
+ @media (max-width: 1080px) {
+    .boxofmusiccards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        }
+    .musiccard{
+                margin: 25px;
+        }
+    }
+
+/*culturecards*/        
+@media (max-width: 1080px) {
+    .boxofculturecards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        }
+        .culturecard{
+                    margin: 25px;
+        }
+}    
+
+/*tvseriescards*/
+@media (max-width: 1080px) {
+    .boxoftvseriescards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .tvseriescard{
+            margin: 25px;
+    }
+}     
+            
+/*footer*/
+@media (max-width: 767px) {
+    .footer-col{
+        width: 50%;
+        padding: 0 15px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 574px) {
+    .footer-col a{
+        width: 100%;
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+}

@@ -1,5 +1,615 @@
 *{
     margin: 0;
     padding: 0;
-    border: border-box;
 }
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+/*Background*/
+
+.indexbox{
+    background-image: url("images/index/background.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.creatorsbox{
+    background-image: url("images/creators/background.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: grid;
+    min-height: 100vh;
+}
+
+.filmsbox{
+    background-image: url("images/films/background.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: grid;
+    min-height: 100vh;
+}
+
+.musicbox{
+    background-image: url("images/music/background.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: grid;
+    min-height: 100vh;
+}
+
+.culturebox{
+    background-image: url("images/culture/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: grid;
+    min-height: 100vh;
+}
+
+.tvseriesbox{
+    background-image: url("images/tvseries/background.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: grid;
+    min-height: 100vh;
+}
+
+/*Navbar*/
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background:#121212;
+    margin-top: 0px;
+}
+
+.button {
+      width: 150px;
+      height: 240px;
+      position: relative;
+      margin: 20px;
+      padding: 10px;
+      background: #111111;
+      margin-bottom: 25px;
+      border-radius: 32px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.1s ease-in-out;
+      box-shadow:  5px 5px 10px #090909,
+      -5px -5px 10px #252525;
+      color: grey;
+}
+
+span {
+    line-height: 317px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.button:active {
+          opacity: 1;
+          box-shadow: inset -4px -4px 8px #252525,
+                      inset 8px 8px 16px #090909;
+          color: #bababa;
+}
+
+.web{
+    background-color: black;
+    opacity: 0.9;
+}
+
+/* Site Title */
+
+.sitetitletvseries {
+font-family: 'Oswald', sans-serif;
+text-align: center;
+padding: 0px;
+margin: 0px;
+font-size: 263px;
+font-weight: 500;
+color: transparent;
+background-image: url("https://media.giphy.com/media/5bivE122X5rrfU2193/giphy.gif");
+background-position:center;
+-webkit-background-clip: text;
+}
+
+.sitetitlecreators {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    font-size: 263px;
+    font-weight: 500;
+    color: transparent;
+    background-image: url("https://media.giphy.com/media/2SOZYN8kzx3hOGHhZy/giphy-downsized-large.gif");
+    background-position:center;
+    -webkit-background-clip: text; 
+}
+
+.sitetitlefilms {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    font-size: 263px;
+    font-weight: 500;
+    color: transparent;
+    background-image: url("https://media.giphy.com/media/3ov9jKVzkOcVnYNbGg/giphy.gif");
+    background-position:center;
+    -webkit-background-clip: text; 
+
+}
+
+.sitetitleculture {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    font-size: 263px;
+    font-weight: 500;
+    color: transparent;
+    background-image: url("https://media.giphy.com/media/ZeLLH4EY28GunbuwXb/giphy.gif");
+    background-position:center;
+    -webkit-background-clip: text; 
+}
+
+.sitetitlemusic{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    font-size: 263px;
+    font-weight: 500;
+    color: transparent;
+    background-image: url("https://media.giphy.com/media/ZB8G7JgxtwCspqDLES/giphy.gif");
+    background-position:center;
+    -webkit-background-clip: text; 
+}
+
+.sitetitleindex {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    font-size: 263px;
+    font-weight: 500;
+    color: transparent;
+    background-image: url("https://media.giphy.com/media/Q8C6SS8kMFISkONqXV/giphy.gif");
+    background-position:center;
+    -webkit-background-clip: text;
+}
+
+/*INDEX*/
+
+/*Front News*/
+
+.mainnews{
+    background-image: url("images/index/pexels-photo-1587442.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.mainnews h2 { 
+  font-size: 147px;
+  margin-bottom: 0;
+}
+.mainnews h3 { 
+  font-size: 65px;
+}
+.mainnews h4 {
+  font-size: 29px
+}
+.mainnews p{
+    font-size: 20px  
+}
+
+h2, h3, h4, p { 
+text-align: center; 
+font-family: Montserrat, sans-serif;
+}
+
+section { 
+  column-width: 1000px;
+  line-height: 30px;
+  width: 1000px;
+  margin: 40px 800px 40px 800px; 
+  text-align: justify;
+  widows: 1;
+  position: relative;
+  column-fill: balance;
+  position: relative;
+}
+
+.imgfn{
+    width: 1220px;
+    height: 680px;
+    margin: 50px 70px 50px -140px;
+}
+
+/*6 other news*/
+
+.boxofindexcards{
+    display: flex;
+    flex-direction: row;
+    margin: 94px 70px;
+    padding: 77px 250px;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 450px;
+    margin: 10px 30px;
+    padding: 10px 40px;
+}
+
+/*creators card*/
+.boxofcreatorscards{
+    display: flex;
+    flex-direction: row;
+    margin: 100px 200px;
+    padding: 200px 100px;
+}
+
+.creatorcard{
+    position: relative;
+    width: 400px;
+    height: 750px;
+    margin: 200px 850px;
+    padding: 10px 40px;
+}
+
+/*films news*/
+.boxoffilmscards{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 10px;
+    padding: 80px 400px;
+}
+
+.filmcard{
+    position: relative;
+    width: 400px;
+    height: 550px;
+    margin: 10px 40px;
+    padding: 10px 40px;
+}
+
+/*music news*/
+.boxofmususiccards{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 10px;
+    padding: 40px 40px;
+}
+
+.musiccard{
+    position: relative;
+    width: 550px;
+    height: 900px;
+    margin: 20px 20px;
+    padding: 40px 40px;
+}
+
+/*culture news*/
+
+.boxofculturecards{
+    display: flex;
+    flex-direction: row;
+    margin: 94px 70px;
+    padding: 77px 250px;
+}
+
+.culturecard{
+    position: relative;
+    width: 550px;
+    height: 550px;
+    margin: 200px 850px;
+    padding: 10px 40px;
+}
+
+/*tvseries news*/
+
+.boxoftvseriescards{
+    display: flex;
+    flex-direction: row;
+    margin: 94px 70px;
+    padding: 77px 250px;
+}
+
+.tvseriecard{
+    position: relative;
+    width: 550px;
+    height: 550px;
+    margin: 200px 850px;
+    padding: 10px 40px;
+}
+
+
+.card .face, .creatorcard .face, .filmcard .face, .musiccard .face, .culturecard .face, .tvseriecard .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front, .creatorcard .front, .filmcard .front, .musiccard .front, .culturecard .front, .tvseriecard .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px black;
+}
+
+.card .front img, .creatorcard .front img, .filmcard .face img, .musiccard .face img, .culturecard .face img, .tvseriecard .face img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: aliceblue;
+    background: rgb(8, 0, 60);
+    opacity: 0.8;
+    text-align: center;
+}
+
+.creatorcard .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: aliceblue;
+    background: rgba(0, 6, 49, 0.83);
+    opacity: 0.8;
+    text-align: center;
+}
+
+.musiccard .face h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: aliceblue;
+    background: rgba(0, 6, 49, 0.83);
+    opacity: 0.8;
+    text-align: center;
+}
+
+.tvseriecard .face h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: aliceblue;
+    background: rgba(0, 6, 49, 0.83);
+    opacity: 0.8;
+    text-align: center;
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background-image: url("images/index/3de2ad93772527.5e6d3c5d86ea5.jpg");
+    padding: 15px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #1d005b;
+}
+
+.creatorcard .back{
+    transform: perspective(600px) rotateY(180deg);
+    background-image: url("images/index/pexels-photo-235525.jpeg");
+    padding: 15px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000f2e;
+}
+
+.filmcard .back{
+    transform: perspective(600px) rotateY(180deg);
+    background-image: url("images/films/telon.jpg");
+    padding: 15px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000f2e;
+}
+
+.musiccard .back{
+    transform: perspective(600px) rotateY(180deg);
+    background-image: url("images/index/il_1140xN.2234476041_lnrv.webp");
+    padding: 15px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000f2e;
+} 
+
+.culturecard .back{
+    transform: perspective(600px) rotateY(180deg);
+    background-image: url("images/index/fabric.jpeg");
+    padding: 15px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000f2e;
+}
+
+.tvseriecard .back{
+    transform: perspective(600px) rotateY(180deg);
+    background-image: url("images/index/791d4b93772527.5e6d3c5d88e05.jpg");
+    padding: 15px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000f2e;
+}
+
+.card .back .link, .creatorcard .back .link, .filmcard .back .link, .musiccard .back .link, .tvseriecard .back .link{
+    border-top: solid 1px white;
+    height: 50px;
+    line-height: 50px;
+}
+
+.culturecard .back .link{
+    border-top: solid 1px rgb(0, 0, 0);
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .back .link a, .creatorcard .back .link a,.filmcard .back .link a, .musiccard .back .link a, .tvseriecard .back .link a{ 
+    color:#FFFFFF;
+    font-family: Montserrat, sans-serif;
+}
+
+.culturecard .back .link a{
+    color:black;
+    font-family: Montserrat, sans-serif;
+}
+
+.card .back h3, .filmcard .back h3, .musiccard .back h3, .culturecard .back h3{
+    font-size: 22px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.creatorcard .back h3{
+    font-size: 65px;
+    margin-top: 60px;
+    letter-spacing: 2px;
+}
+
+.card .back p{
+    letter-spacing: 1px;
+}
+
+.creatorcard .back p, .filmcard .back h3, .musiccard .back h3, .culturecard .back h3{
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+}
+
+.card:hover .front, .creatorcard:hover .front, .filmcard:hover .front, .musiccard:hover .front, .culturecard:hover .front, .tvseriecard:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back, .creatorcard:hover .back, .filmcard:hover .back, .musiccard:hover .back, .culturecard:hover .back, .tvseriecard:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+/*footer*/
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: rgb(0, 0, 0);
+    opacity: 0.8;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+   justify-content: center;
+
+}
+.footer-col h4{
+	font-size: 18px;
+    font-family: Montserrat, sans-serif;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+    margin-left: -20px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -5px;
+	background-color: #050013;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+    font-family: Montserrat, sans-serif;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+    text-align: center;
+	font-weight: 300;
+	color: #363636;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+
+.footer-col .social-links{
+    padding: 20px 65px;
+}
+
+.footer-col .social-links img{
+    padding: 5px 5px;
+}
+
+
+
+/*CREATORS*/
